@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Переводчик</string>
+
+    <string name="translation">Перевод</string>
+    <string name="history">История</string>
+    <string name="favorites">Избранное</string>
+    <string name="yandex">Переведено сервисом «Яндекс.Переводчик»</string>
+    <string name="yandex_link">http://translate.yandex.ru/</string>
+    <string name="choose_lang">Выберите язык</string>
+    <string name="msg_daily_limit_exceed">Превышено суточное ограничение на объем переведенного текста.</string>
+    <string name="msg_text_length_exceed">Превышен максимально допустимый размер текста.</string>
+    <string name="msg_unable_to_translate">Текст не может быть переведен.</string>
+    <string name="msg_wrong_direction">Заданное направление перевода не поддерживается.</string>
+    <string name="msg_call_support">Перевод невозможен. Пожалуйста, обратитесь в службу поддержки.</string>
+    <string name="connection_error_title">Ошибка соединения</string>
+    <string name="connection_error_msg">Проверьте подключение к Интернету и повторите попытку.</string>
+    <string name="repeat">ПОВТОРИТЬ</string>
+    <string name="input_text">Введите текст</string>
+
+</resources>

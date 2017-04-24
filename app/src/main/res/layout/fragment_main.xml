@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <Button
+            android:id="@+id/lang1_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_toStartOf="@+id/swap_langs_button"
+            android:textAlignment="textEnd"/>
+
+        <ImageButton
+            android:id="@+id/swap_langs_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:src="@android:drawable/stat_notify_sync"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/text_margin"/>
+
+        <Button
+            android:id="@+id/lang2_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_toEndOf="@+id/swap_langs_button"
+            android:textAlignment="textStart"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="@string/input_text" />
+
+    <FrameLayout
+        android:id="@+id/result_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+</LinearLayout>

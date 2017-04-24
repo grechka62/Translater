@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/yandex"
+        android:id="@+id/fragment_container">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/yandex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yandex_link"
+        android:text="@string/yandex"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin">
+    </TextView>
+
+    <TextView
+        android:id="@+id/yandex_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_tablayout"
+        android:text="@string/yandex_link"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+    </TextView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <android.support.design.widget.TabItem
+            android:text="@string/translation"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="wrap_content"/>
+
+        <android.support.design.widget.TabItem
+            android:text="@string/history"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="wrap_content"/>
+
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

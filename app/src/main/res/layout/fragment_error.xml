@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="@dimen/text_margin"
+        android:text="@string/connection_error_title"
+        android:textColor="@color/colorTextDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingEnd="@dimen/text_margin"
+        android:paddingStart="@dimen/text_margin"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/connection_error_msg" />
+
+    <Button
+        android:id="@+id/repeat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/repeat" />
+
+</LinearLayout>
